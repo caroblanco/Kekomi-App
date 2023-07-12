@@ -1,10 +1,9 @@
-package com.app.kekomi
+package com.app.kekomi.BottomNav
 
 import androidx.compose.material.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
@@ -18,7 +17,7 @@ fun BottomNavigation(navController: NavController) {
         BottomNavItem.Profile
     )
     BottomNavigation(
-        backgroundColor = colorResource(id = R.color.teal_200),
+        backgroundColor = Color(android.graphics.Color.parseColor("#cfcfcf")),
         contentColor = Color.Black
     ) {
         val navBackStackEntry by navController.currentBackStackEntryAsState()
